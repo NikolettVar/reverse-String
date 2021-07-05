@@ -11,12 +11,7 @@ package reversedstring;
  *09 03 2021
  */
 
-public class ReversedStringApp {//reverse a string
-
-    /**
-     * @param str
-     * @return 
-     */
+public class ReversedStringApp {//reverse a string   
     
     public static String reverseString(String str){
         if(str.length() == 0){//if string is empty
@@ -26,8 +21,7 @@ public class ReversedStringApp {//reverse a string
             return reverseString(str.substring(1)) + str.charAt(0);
         }
     }
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) {       
         
         String str = "tesla";
         String reversed = reverseString(str);
